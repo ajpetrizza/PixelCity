@@ -43,7 +43,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7t-fd-rJB">
-                                <rect key="frame" x="310" y="597" width="50" height="50"/>
+                                <rect key="frame" x="310" y="607" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="VFA-at-9u3"/>
                                     <constraint firstAttribute="height" constant="50" id="Wl2-xq-Qbe"/>
@@ -56,6 +56,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8SK-qf-xxi">
                                 <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="N6e-yI-PPe"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -65,11 +68,10 @@
                             <constraint firstItem="Hjd-2T-wKp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="E6q-U1-eIT"/>
                             <constraint firstAttribute="trailing" secondItem="8SK-qf-xxi" secondAttribute="trailing" id="EaK-qg-mpN"/>
                             <constraint firstItem="Y7t-fd-rJB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-15" id="GqW-Xd-7K1"/>
-                            <constraint firstItem="Hjd-2T-wKp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Lvj-Ju-rRg"/>
+                            <constraint firstItem="Y7t-fd-rJB" firstAttribute="bottom" secondItem="Hjd-2T-wKp" secondAttribute="bottom" constant="-10" id="IfY-uS-kZb"/>
                             <constraint firstItem="Hjd-2T-wKp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ReZ-71-j9a"/>
                             <constraint firstItem="vdk-wG-ecI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="T8X-9B-Di4"/>
                             <constraint firstItem="8SK-qf-xxi" firstAttribute="top" secondItem="Hjd-2T-wKp" secondAttribute="bottom" id="WGd-3s-8RV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y7t-fd-rJB" secondAttribute="bottom" constant="20" id="d1q-5u-8op"/>
                             <constraint firstItem="vdk-wG-ecI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="djZ-Yf-Yd7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8SK-qf-xxi" secondAttribute="bottom" id="hhR-6Q-88I"/>
                             <constraint firstItem="Hjd-2T-wKp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iZd-P5-Kpv"/>
@@ -78,6 +80,8 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="Hjd-2T-wKp" id="pQ1-9n-ao7"/>
+                        <outlet property="pullUpView" destination="8SK-qf-xxi" id="oI9-jw-Q3I"/>
+                        <outlet property="pullUpViewHeightConstraint" destination="N6e-yI-PPe" id="5TD-qS-gJ3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
